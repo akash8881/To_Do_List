@@ -1,0 +1,37 @@
+<!-- <form class="row g-3">
+    <div class="col-auto">
+      <label for="staticEmail2" class="visually-hidden">Email</label>
+      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+    </div>
+    <div class="col-auto">
+      <label for="inputPassword2" class="visually-hidden">Password</label>
+      <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+    </div>
+  </form> -->
+
+<div class="card">
+
+    <div class="col-lg-12 row mt-5 ml-10">
+        <div class="col-lg-4">
+        <input type="text" placeholder="Name" class="form-control" #box>
+        </div>
+        <div class="col-lg-4">
+            <input type="text" placeholder="lastName" class="form-control" #box1>
+        </div>
+        <div class="col-lg-4">
+        <button type="submit" class="btn btn-success" (click)="toDoList(box.value,box1.value)">To Do List</button>
+        </div>
+        <ul *ngFor="let list of ToDoList">
+            <li>{{list.id}} </li>
+            <li>{{list.name}}</li>
+            <li>{{list.lastname}}</li>
+            <li><button type="submit" class="btn btn-success" (click)="toDoListRemove(list.id)">remove</button></li>
+           
+        </ul>
+        <h2>{{showMessage}}</h2>
+    </div>
+   
+</div>

@@ -1,0 +1,35 @@
+.card
+{
+    width: 60vw;
+    height: 27vmax;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    background-color: aqua;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.row
+{
+    margin-left:30px;
+}
+ul{
+    list-style-type: none;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -20px !important;
+    margin-top: 5px;
+    padding: 10px;
+    width: 58vw;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+   
+}
+li{
+    width: 14vw;
+    background-color: aquamarine;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #fff;
+}
